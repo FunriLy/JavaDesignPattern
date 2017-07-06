@@ -30,7 +30,7 @@ public class Main {
         /**
          * 模拟ArrayList的实现
          */
-        MyList<String> array = new MyArrayList<>();
+        MyList<String> array = new MyArrayList<String>();
         for (int i=0; i<10; i++){
             array.add(String.valueOf(i));
         }
