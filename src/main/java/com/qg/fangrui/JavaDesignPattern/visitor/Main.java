@@ -1,5 +1,7 @@
 package com.qg.fangrui.JavaDesignPattern.visitor;
 
+import java.util.Iterator;
+
 /**
  * Created by FunriLy on 2017/7/19.
  * From small beginnings comes great things.
@@ -35,6 +37,17 @@ public class Main {
             tomura.add(new File("game.doo", 400));
             tomura.add(new File("iunk.mail", 500));
             rootdir.accept(new ListVisitor());
+
+            System.out.println("");
+            System.out.println("HTML files are :");
+            //汇集带有指定后缀的文件
+            FileFindVisitor findVisitor = new FileFindVisitor(".html");
+            rootdir.accept(findVisitor);
+            Iterator iterator = findVisitor.getFoundFiles();
+            while (iterator.hasNext()){
+                File file = (File) iterator.next();
+                System.out.println(file.toString());
+            }
         } catch (FileTreatmentException e){
             e.printStackTrace();
         }
