@@ -1,4 +1,4 @@
-package com.qg.fangrui.JavaDesignPattern.command;
+package com.qg.fangrui.JavaDesignPattern.command.simplecommand;
 
 import java.io.File;
 import java.io.IOException;

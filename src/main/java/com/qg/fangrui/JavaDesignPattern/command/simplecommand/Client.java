@@ -1,4 +1,4 @@
-package com.qg.fangrui.JavaDesignPattern.command;
+package com.qg.fangrui.JavaDesignPattern.command.simplecommand;
 
 /**
  * Created by funrily on 17-7-26
